@@ -22,6 +22,11 @@ public class VoiceMovement : MonoBehaviour
         actions.Add("up", Up);
         actions.Add("down", Down);
         actions.Add("back", Back);
+        actions.Add("music", Music);
+        actions.Add("news", News);
+        actions.Add("podcasts", Podcasts);
+        actions.Add("sport", Sport);
+
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += recognizedPhrase;
@@ -58,5 +63,25 @@ public class VoiceMovement : MonoBehaviour
     private void Down()
     {
         transform.Translate(0, -1, 0);
+    }
+
+    private void Music()
+    {
+        Debug.Log("Music");
+    }
+
+    private void News()
+    {
+        Debug.Log("News");
+    }
+
+    private void Podcasts()
+    {
+        Debug.Log("Podcasts");
+    }
+
+    private void Sport()
+    {
+        Debug.Log("Sport");
     }
 }
