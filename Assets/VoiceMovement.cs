@@ -26,6 +26,14 @@ public class VoiceMovement : MonoBehaviour
         actions.Add("news", News);
         actions.Add("podcasts", Podcasts);
         actions.Add("sport", Sport);
+        actions.Add("weather", Gotit);
+        actions.Add("terrains", Gotit);
+        actions.Add("performance", Gotit);
+        actions.Add("compare", Gotit);
+        actions.Add("maps", Gotit);
+        actions.Add("navigation", Gotit);
+        actions.Add("contacts", Gotit);
+        actions.Add("calls", Gotit);
 
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
@@ -43,6 +51,11 @@ public class VoiceMovement : MonoBehaviour
     {
         Debug.Log(phrase.text);
         actions[phrase.text].Invoke();
+    }
+
+    private void Gotit()
+    {
+        Debug.Log("---");
     }
 
     private void Forward()
