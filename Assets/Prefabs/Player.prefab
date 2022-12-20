@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6199708120227758434}
   - component: {fileID: -7143221169925831040}
   - component: {fileID: -253420195341174296}
+  - component: {fileID: 5138358903758005650}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -139,3 +140,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e0f03224c66fb4a8437a5eadbeef80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5138358903758005650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6199708120227758437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff3ba0becae47b8b9381191598957c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  target: {fileID: 6199708120227758433}
+  onlySyncOnChange: 1
+  onlySyncOnChangeCorrectionMultiplier: 2
+  rotationSensitivity: 0.01
+  compressRotation: 0
+  positionPrecision: 0.01
+  scalePrecision: 0.01
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  showGizmos: 0
+  showOverlay: 0
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
